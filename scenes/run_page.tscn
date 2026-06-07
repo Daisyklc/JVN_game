@@ -1,0 +1,89 @@
+[gd_scene format=3 uid="uid://6m661iog8t13"]
+
+[ext_resource type="Script" uid="uid://bgx6oyx1lms71" path="res://scripts/run_page.gd" id="1_script"]
+
+[node name="RunPage" type="Control" unique_id=310279572]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_script")
+timeline_to_play = "sc001_合唱室傍晚"
+auto_play_on_ready = true
+
+[node name="Background" type="ColorRect" parent="." unique_id=867841912]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.12, 0.11, 0.14, 1)
+
+[node name="BgTexture" type="TextureRect" parent="Background" unique_id=1382993677]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+stretch_mode = 6
+
+[node name="SystemUILayer" type="CanvasLayer" parent="." unique_id=1770523938]
+layer = 2
+
+[node name="OverlayLayer" type="CanvasLayer" parent="." unique_id=1392622320]
+layer = 10
+
+[node name="BlackoutOverlay" type="ColorRect" parent="OverlayLayer" unique_id=1798158801]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 1)
+
+[node name="HallucinationOverlay" type="ColorRect" parent="OverlayLayer" unique_id=2116800458]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.45, 0.05, 0.08, 0.35)
+
+[node name="RedTintOverlay" type="ColorRect" parent="OverlayLayer" unique_id=1690660529]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.7, 0.05, 0.05, 0.4)
+
+[node name="CGLayer" type="CanvasLayer" parent="." unique_id=2045901234]
+layer = 8
+visible = false
+
+[node name="CGTexture" type="TextureRect" parent="CGLayer" unique_id=2039006569]
+modulate = Color(1, 1, 1, 0)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+stretch_mode = 6
+
+[node name="CGCloseBtn" type="Button" parent="CGLayer" unique_id=1189930106]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+flat = true

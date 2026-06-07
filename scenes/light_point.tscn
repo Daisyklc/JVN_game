@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://bumojewa8sm08"]
+
+[ext_resource type="Script" uid="uid://vvxfksljx3yy" path="res://scripts/light_point.gd" id="1_script"]
+
+[node name="LightPoint" type="Control" unique_id=1786640910]
+custom_minimum_size = Vector2(24, 24)
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_script")
+glow_color = Color(1, 0.95, 0.7, 1)
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1080912495]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -9.0
+offset_top = -9.0
+offset_right = 9.0
+offset_bottom = 9.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(1, 0.95, 0.7, 1)

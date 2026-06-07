@@ -1,0 +1,17 @@
+# 1. 进门先检查：是不是来过？
+if {visited.visited_test}== true:
+    # 如果来过了，直接跳转到拒绝访问的 timeline
+    jump room_2F_banned/
+
+# 2. 如果没来过，打上已访问
+set {visited_test} = true
+
+# 3. 开始首次进入的正式剧情【不能再次进入量表室】
+
+label room_test_start
+label FX_blackout_start
+郝悦 (P普通C制服E低沉叹气): 我现在没法在这里继续呆着。
+label FX_blackout_end
+label room_test_end
+# 关闭四角黑色遮罩
+# 剧情结束，系统逻辑：回到大地图

@@ -1,0 +1,27 @@
+# 1. 进门先检查：是不是来过？
+if {visited.visited_outpatientCharge} == true:
+    # 如果来过了，直接跳转到拒绝访问的 timeline
+    jump room_1F_banned/
+
+# 2. 如果没来过，打上已访问
+set {visited_childteens} = true
+
+# 3. 开始首次进入的正式剧情
+label FX_vignette_start
+label room_outpatientCharge_start
+label bg_outpatientCharge
+# 背景 门诊收费窗口
+郝悦 (P抱胸C制服E普通): 您好，我想结一下我今天的就诊费用。
+工作人员: 患者郝悦。您的账户余额已不足。
+郝悦 (P普通C制服E惊讶): ……我，我也没有带现金。
+郝悦 (P普通C制服E低沉叹气): 那个，能不能让我先欠着，我可以回去之后在手机上交。
+工作人员: 没关系的，患者郝悦。
+工作人员: 您的费用会由项涟漪女士代付的。
+郝悦 (P抱胸C制服E惊讶): 不，我不要她替我付。
+郝悦 (P抱胸C制服E低沉叹气): 如果她来，你就说我会自己付的，可以吗？
+郝悦 (P普通C制服E黑脸): 我不喜欢欠别人人情。
+工作人员: 她是不会介意的。
+label FX_vignette_end
+label room_childteens_end
+# 关闭四角黑色遮罩
+# 剧情结束，系统逻辑：回到大地图

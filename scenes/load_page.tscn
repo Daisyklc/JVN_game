@@ -1,0 +1,71 @@
+[gd_scene load_steps=6 format=3 uid="uid://load_page_scene"]
+
+[ext_resource type="Texture2D" path="res://assets/UI/gameUIset_red/load_bg.png" id="1_bg"]
+[ext_resource type="Texture2D" path="res://assets/UI/gameUIset_red/button_back.png" id="2_back"]
+[ext_resource type="Texture2D" path="res://assets/UI/gameUIset_red/button_back_hover.png" id="3_backh"]
+[ext_resource type="Texture2D" path="res://assets/UI/gameUIset_red/button_back_click.png" id="4_backc"]
+[ext_resource type="Script" path="res://scripts/load_page.gd" id="5_script"]
+
+[node name="LoadPage" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("5_script")
+
+[node name="Background" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_bg")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="PageTitle" type="Label" parent="."]
+layout_mode = 1
+anchor_left = 0.5
+anchor_top = 0.0
+anchor_right = 0.5
+anchor_bottom = 0.0
+offset_left = -150.0
+offset_top = 16.0
+offset_right = 150.0
+offset_bottom = 70.0
+grow_horizontal = 2
+text = "加载游戏"
+horizontal_alignment = 1
+
+[node name="BackBtn" type="TextureButton" parent="."]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -56.0
+offset_right = 60.0
+grow_vertical = 0
+texture_normal = ExtResource("2_back")
+texture_pressed = ExtResource("4_backc")
+texture_hover = ExtResource("3_backh")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="SlotScrollContainer" type="ScrollContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.04
+anchor_top = 0.13
+anchor_right = 0.96
+anchor_bottom = 0.96
+horizontal_scroll_mode = 0
+
+[node name="SlotGrid" type="GridContainer" parent="SlotScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_constants/h_separation = 24
+theme_override_constants/v_separation = 24
+columns = 2

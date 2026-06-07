@@ -1,0 +1,57 @@
+[gd_scene format=3 uid="uid://dj4ywrnd4t6c1"]
+
+[ext_resource type="Texture2D" uid="uid://paqvwxwdx2xm" path="res://assets/UI/gameUIset_red/gallery_bg.png" id="1_bg"]
+[ext_resource type="Texture2D" uid="uid://dsyrqm7oa80j4" path="res://assets/UI/gameUIset_red/button_back.png" id="2_back"]
+[ext_resource type="Texture2D" uid="uid://dv8mn2ijcl76o" path="res://assets/UI/gameUIset_red/button_back_hover.png" id="3_backh"]
+[ext_resource type="Texture2D" uid="uid://74wpe1p20lh4" path="res://assets/UI/gameUIset_red/button_back_click.png" id="4_backc"]
+[ext_resource type="Script" uid="uid://d3fdvf1imkjgb" path="res://scripts/gallery_page.gd" id="5_script"]
+
+[node name="GalleryPage" type="Control" unique_id=1262999726]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("5_script")
+
+[node name="Background" type="TextureRect" parent="." unique_id=1726018870]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_bg")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="BackBtn" type="TextureButton" parent="." unique_id=1895335267]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -56.0
+offset_right = 60.0
+grow_vertical = 0
+texture_normal = ExtResource("2_back")
+texture_pressed = ExtResource("4_backc")
+texture_hover = ExtResource("3_backh")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="CgScrollContainer" type="ScrollContainer" parent="." unique_id=626015086]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.04
+anchor_top = 0.13
+anchor_right = 0.96
+anchor_bottom = 0.96
+horizontal_scroll_mode = 0
+
+[node name="CgGrid" type="GridContainer" parent="CgScrollContainer" unique_id=2015455250]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_constants/h_separation = 24
+theme_override_constants/v_separation = 24
+columns = 3

@@ -1,0 +1,67 @@
+{
+"@path": "res://addons/dialogic/Resources/character.gd",
+"@subpath": NodePath(""),
+&"_translation_id": "",
+&"color": Color(1, 1, 1, 1),
+&"custom_info": {
+"prefix": "",
+"sound_mood_default": "",
+"sound_moods": {},
+"style": "",
+"suffix": ""
+},
+&"default_portrait": "P普通C工作服E普通",
+&"description": "",
+&"display_name": "项涟漪",
+&"mirror": false,
+&"nicknames": [""],
+&"offset": Vector2(0, 0),
+&"portraits": {
+"No portrait": {
+"export_overrides": {
+"image": ""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"OS": {
+"export_overrides": {
+"image": ""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"P普通C工作服E微笑": {
+"export_overrides": {
+"image": "res://assets/XLY_Teacher/XLY_P_normal_C_work_E_smile.png"
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"P普通C工作服E担心": {
+"export_overrides": {
+"image": "res://assets/XLY_Teacher/XLY_P_normal_C_work_E_worry.png"
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"P普通C工作服E普通": {
+"export_overrides": {
+"image": "res://assets/XLY_Teacher/XLY_P_normal_C_work_E_normal.png"
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+}
+},
+&"scale": 1.0
+}

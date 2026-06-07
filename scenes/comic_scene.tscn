@@ -1,0 +1,70 @@
+[gd_scene format=3 uid="uid://ctk171uao45pi"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_xvcnr"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_k2vsw"]
+
+[node name="ComicScene" type="Control" unique_id=989203343]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Background" type="TextureRect" parent="." unique_id=1162176458]
+modulate = Color(0.78039217, 0.7764706, 0.90588236, 0.50980395)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("CanvasTexture_xvcnr")
+
+[node name="PanelsContainer" type="Control" parent="." unique_id=1075418537]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_bottom = -200.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel1" type="TextureRect" parent="PanelsContainer" unique_id=1129686382]
+modulate = Color(0.68897045, 0.92974716, 0.95879024, 0.28235295)
+layout_mode = 0
+offset_left = 80.0
+offset_top = 48.0
+offset_right = 368.0
+offset_bottom = 592.0
+texture = SubResource("CanvasTexture_k2vsw")
+
+[node name="Panel2" type="TextureRect" parent="PanelsContainer" unique_id=459367752]
+modulate = Color(0.68897045, 0.92974716, 0.95879024, 0.28235295)
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -64.0
+offset_top = 56.0
+offset_right = 508.0
+offset_bottom = 248.0
+grow_horizontal = 2
+texture = SubResource("CanvasTexture_k2vsw")
+
+[node name="Panel3" type="TextureRect" parent="PanelsContainer" unique_id=229017881]
+modulate = Color(0.68897045, 0.92974716, 0.95879024, 0.28235295)
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -144.0
+offset_top = -160.0
+offset_right = 504.0
+offset_bottom = 96.0
+grow_horizontal = 2
+grow_vertical = 0
+texture = SubResource("CanvasTexture_k2vsw")

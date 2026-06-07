@@ -1,0 +1,11 @@
+label sc003_start
+label bg_room_yiyujiaolv
+# 一个门诊的背景
+医生: 嗯，我大概明白了，家长先带孩子去二楼，在测评室的在电脑上做个量表。
+项涟漪 (P普通C工作服E微笑): 好的医生。
+label GAME_selectHospital
+[wait time="2.0"]
+label GAME_selectHospital_end
+项涟漪 (P普通C工作服E普通): 好。郝悦，我在门口等你。做完出来找我。
+郝悦点了点头。转身进了诊疗室
+label sc003_end

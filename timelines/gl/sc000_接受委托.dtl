@@ -1,0 +1,51 @@
+label FX_black_screen_typing
+{主控}看见了一个女孩，跪在一架钢琴旁边，背脊微微弓着
+女孩浑身湿漉漉的，像被雨淋湿的狗。
+水不断从她的身上往下滴，在地上漫开一滩暗红的水痕。
+
+- 走上前去
+女孩低着头，湿透的头发结成一绺一绺，垂下来遮住了大半张脸，无法看清她的表情。
+主控: 你好？我是{主控}，你是委托者吗？
+女孩没有任何回音。一时间{主控}几乎以为自己正在对着一件摆放在这里的雕塑说话。
+{主控}突然想起，在接受委托时，好像上面写了名字。
+主控 (OS): 叫什么来着……
+label Choosename
+- 霍雨
+	jump Choose_name_huoyu
+- 郝悦
+	jump Choose_name_HY
+- 黄月
+	jump Choose_name_huangyue
+label Choose_name_huoyu
+主控: 霍雨？你是霍雨吧
+女孩毫无反应，连呼吸的起伏都看不出来。
+主控 (OS): 看来这不是她的名字。
+jump Choose_name
+label Choose_name_huangyue
+主控: 黄月？你是黄月吧？
+听见这个名字的时候，她垂着的肩膀轻轻抽动了一下，但是女孩依旧没有抬头。
+主控 (OS): 应该是发音上已经比较接近了？
+jump Choose_name
+label Choose_name_HY
+主控: 你就是……郝悦吗？
+女孩终于有了反应。这尊雕像缓缓的抬起了头。
+label CG_DyingHY
+[signal arg="CG_DyingHY"]
+很难形容现在看到的这是一张什么样的脸。
+人通常会先从一张脸上看到很多东西。
+看到皱纹，就会猜她勤劳又爱笑。
+看到红润的气色，就会猜她身体健康，爱吃肉食。
+看到苍白和平静的表情，会觉得她冷淡、疏远，也许不愿与人亲近。
+但是在这张脸上，什么都看不到。她脸上没有生气，没有情绪，没有能让人顺着往下猜的东西。
+主控: 郝悦。
+主控: 我来接受你的委托了。
+label FX_black_swallow
+label FX_black_Screen_typing
+[signal arg="FX_black_Screen_typing"]
+[wait time="1.0"]
+郝悦: 拜托你。
+郝悦: 让项涟漪回到我身边。
+label FX_black_Screen_typing_end
+label CG_DyingHY_end
+label sc000_end
+[signal arg="sc000_end"]

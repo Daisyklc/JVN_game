@@ -1,0 +1,36 @@
+# 1. 进门先检查：是不是来过？
+if {visited.visited_sleepdisorder} == true:
+    # 如果来过了，直接跳转到拒绝访问的 timeline
+    jump room_2F_banned/
+
+# 2. 如果没来过，打上已访问
+set {visited.visited_sleepdisorder} = true
+
+# 3. 开始首次进入的正式剧情
+label FX_vignette_start
+# 四角黑色的遮罩
+label room_sleepdiscorder_start
+label bg_bedInHeaven
+# 背景 圣洁的一张床。。
+郝悦 (P普通C制服E惊讶): 项老师……
+项涟漪 (P普通C工作服E微笑): 郝悦，你太累了，来睡一觉吧。
+郝悦 (P普通C制服E惊讶): 老师，可是我……
+项涟漪 (P普通C工作服E微笑): 郝悦。闭上眼睛
+# 郝悦闭眼， 接下来的文字呈现黑屏打印效果
+label FX_black_screen_typing_start
+安睡吧，安睡吧，美梦会浮现
+星星高悬月儿弯，妈妈在身边
+小枝丫，快快长，花儿要开放
+无忧无虑多欢喜，好运常相伴
+春天短，夏日炎，秋与冬苦寒
+温柔时光多短暂，世事多艰难
+安睡吧，别醒来，这里是天堂
+外面处处是危险
+永远……
+永远……别……睁眼……
+label FX_black_screen_typing_end
+# 郝悦睁眼
+label FX_vignette_end
+label room_sleepdiscorder_end
+# 关闭四角黑色遮罩
+# 剧情结束，系统逻辑：回到大地图

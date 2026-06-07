@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://d283jjtapyf1w"]
+
+[ext_resource type="Script" uid="uid://24fcvjvjlljd" path="res://pen_god_game/workbench_scene.gd" id="1_wbs"]
+
+[node name="WorkbenchScene" type="Control" unique_id=22307590]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource("1_wbs")

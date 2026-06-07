@@ -1,0 +1,5 @@
+# bg1 总线（兼容入口）：从此处 label 转入第一幕 bg1_sc001。
+# 分幕：bg1_sc001 → bg1_sc002 → bg1_sc003 → bg1_sc005a → bg1_sc005b → bg1_sc006
+
+label bg1_sc_start
+jump bg1_sc001/bg1_sc_start

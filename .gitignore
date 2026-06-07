@@ -1,0 +1,25 @@
+# Godot 4+ specific ignores
+.godot/
+.import/
+export.cfg
+export_presets.cfg
+*.translation
+
+# Android
+/android/
+
+# Build / package artifacts
+*.tar
+*.tar.*
+*.jar
+*.exe
+*.msi
+*.deb
+*.zip
+*.tgz
+*.log
+*.log.*
+*.sig
+
+pkg/
+src/

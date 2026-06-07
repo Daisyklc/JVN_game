@@ -1,0 +1,26 @@
+# 1. 进门先检查：是不是来过？
+if {visited.visited_houzhenwaiting} == true:
+    # 如果来过了，直接跳转到拒绝访问的 timeline
+    jump room_1F_banned/
+
+# 2. 如果没来过，打上已访问
+set {visited.visited_houzhenwaiting} = true
+
+# 3. 开始首次进入的正式剧情
+label FX_vignette_start
+label room_houzhenwaiting_start
+label bg_houzhenwaiting
+# 背景 候诊
+label SE_dingdong
+# 叮咚的广播提示音
+广播: 郝悦患者在吗？
+广播: 郝悦患者，你在听吗？
+广播: 请郝悦患者，回到二楼量表室继续完成量表。
+郝悦 (P普通C制服E黑脸): 不。
+广播: 请郝悦患者，听到后反思自己的错误。
+广播: 请郝悦患者，向所有人道歉。
+广播: 请郝悦患者，停止逃跑。
+label FX_vignette_end
+label room_houzhenwaiting_end
+# 关闭四角黑色遮罩
+# 剧情结束，系统逻辑：回到大地图

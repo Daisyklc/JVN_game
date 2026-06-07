@@ -1,0 +1,8 @@
+label room_2F_banned_start
+label FX_blackout_start
+郝悦 (P抱胸C制服E普通): 这里我来过了。
+郝悦 (P抱胸C制服E低沉叹气): 这里不是出口。我不要在这里。
+
+label FX_blackout_end
+label room_2F_banned_end
+# 剧情结束，系统逻辑:返回大地图

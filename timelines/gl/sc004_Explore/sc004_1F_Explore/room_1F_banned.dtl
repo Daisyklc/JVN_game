@@ -1,0 +1,8 @@
+label room_3F_banned_start
+label FX_blackout_start
+郝悦 (P普通C制服E普通): 这里我已经看过了。
+郝悦 (P普通C制服E低沉叹气): 我必须马上离开这家医院……不能再耽搁了。
+
+label FX_blackout_end
+label room_2F_banned_end
+# 剧情结束，系统逻辑:返回大地图

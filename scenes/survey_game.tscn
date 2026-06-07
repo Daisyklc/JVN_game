@@ -1,0 +1,115 @@
+[gd_scene format=3 uid="uid://dfs5rjkhi021l"]
+
+[ext_resource type="Script" uid="uid://bpwjf7c3kx9nt" path="res://scripts/survey_game.gd" id="1_script"]
+
+[node name="SurveyGame" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_script")
+
+[node name="Background" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.88, 0.9, 0.94, 1)
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="SurveyPanel" type="PanelContainer" parent="CenterContainer"]
+custom_minimum_size = Vector2(880, 520)
+
+[node name="MarginContainer" type="MarginContainer" parent="CenterContainer/SurveyPanel"]
+layout_mode = 2
+theme_override_constants/margin_left = 52
+theme_override_constants/margin_right = 52
+theme_override_constants/margin_top = 36
+theme_override_constants/margin_bottom = 36
+
+[node name="VBox" type="VBoxContainer" parent="CenterContainer/SurveyPanel/MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 18
+
+[node name="HeaderBox" type="HBoxContainer" parent="CenterContainer/SurveyPanel/MarginContainer/VBox"]
+layout_mode = 2
+
+[node name="TitleLabel" type="Label" parent="CenterContainer/SurveyPanel/MarginContainer/VBox/HeaderBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "心理状态自评量表"
+theme_override_font_sizes/font_size = 22
+
+[node name="ProgressLabel" type="Label" parent="CenterContainer/SurveyPanel/MarginContainer/VBox/HeaderBox"]
+layout_mode = 2
+text = "1 / 26"
+vertical_alignment = 1
+theme_override_font_sizes/font_size = 14
+theme_override_colors/font_color = Color(0.45, 0.45, 0.5, 1)
+
+[node name="HSep1" type="HSeparator" parent="CenterContainer/SurveyPanel/MarginContainer/VBox"]
+layout_mode = 2
+
+[node name="QuestionLabel" type="Label" parent="CenterContainer/SurveyPanel/MarginContainer/VBox"]
+layout_mode = 2
+custom_minimum_size = Vector2(0, 90)
+size_flags_vertical = 4
+text = ""
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+theme_override_font_sizes/font_size = 20
+
+[node name="HSep2" type="HSeparator" parent="CenterContainer/SurveyPanel/MarginContainer/VBox"]
+layout_mode = 2
+
+[node name="OptionsContainer" type="HBoxContainer" parent="CenterContainer/SurveyPanel/MarginContainer/VBox"]
+layout_mode = 2
+alignment = 1
+theme_override_constants/separation = 16
+
+[node name="ScreamOverlay" type="CanvasLayer" parent="."]
+layer = 20
+visible = false
+
+[node name="ScreenDim" type="ColorRect" parent="ScreamOverlay"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color(0.03, 0.0, 0.0, 0.94)
+
+[node name="ScreamLabel" type="Label" parent="ScreamOverlay"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+text = "啊啊啊啊啊啊啊啊！\n啊啊啊啊啊啊啊啊！\n啊啊啊啊啊啊啊啊！\n啊啊啊啊啊啊啊啊！"
+horizontal_alignment = 1
+vertical_alignment = 1
+theme_override_font_sizes/font_size = 56
+theme_override_colors/font_color = Color(0.92, 0.08, 0.08, 1)
+
+[node name="ScreamHint" type="Label" parent="ScreamOverlay"]
+layout_mode = 0
+anchor_left = 0.0
+anchor_right = 1.0
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -52
+offset_bottom = -16
+text = "（点击任意处继续）"
+horizontal_alignment = 1
+theme_override_font_sizes/font_size = 13
+theme_override_colors/font_color = Color(0.6, 0.6, 0.6, 1)

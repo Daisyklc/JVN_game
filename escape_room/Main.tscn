@@ -1,0 +1,100 @@
+[gd_scene load_steps=7 format=3]
+
+[ext_resource type="Script" path="res://escape_room/RoomController.gd" id="1_ctrl"]
+[ext_resource type="Script" path="res://escape_room/ZoomLayerInit.gd" id="5_zoom_init"]
+[ext_resource type="Script" path="res://escape_room/Inventory.gd" id="6_inv"]
+[ext_resource type="PackedScene" path="res://escape_room/Room_0.tscn" id="2_r0"]
+[ext_resource type="PackedScene" path="res://escape_room/Room_1.tscn" id="3_r1"]
+[ext_resource type="PackedScene" path="res://escape_room/Room_2.tscn" id="4_r2"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_ctrl")
+room_scenes = [ExtResource("2_r0"), ExtResource("3_r1"), ExtResource("4_r2")]
+
+[node name="RoomContainer" type="Node2D" parent="."]
+
+[node name="UILayer" type="CanvasLayer" parent="."]
+
+[node name="LeftArrow" type="Button" parent="UILayer"]
+anchor_left = 0.0
+anchor_top = 0.5
+anchor_right = 0.0
+anchor_bottom = 0.5
+offset_left = 12.0
+offset_top = -60.0
+offset_right = 68.0
+offset_bottom = 60.0
+text = "◀"
+theme_override_font_sizes/font_size = 32
+
+[node name="RightArrow" type="Button" parent="UILayer"]
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -68.0
+offset_top = -60.0
+offset_right = -12.0
+offset_bottom = 60.0
+text = "▶"
+theme_override_font_sizes/font_size = 32
+
+[node name="Inventory" type="HBoxContainer" parent="UILayer"]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -220.0
+offset_top = -88.0
+offset_right = 220.0
+offset_bottom = -8.0
+alignment = 1
+script = ExtResource("6_inv")
+
+[node name="Slot0" type="Panel" parent="UILayer/Inventory"]
+custom_minimum_size = Vector2(100, 72)
+
+[node name="Label" type="Label" parent="UILayer/Inventory/Slot0"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Slot1" type="Panel" parent="UILayer/Inventory"]
+custom_minimum_size = Vector2(100, 72)
+
+[node name="Label" type="Label" parent="UILayer/Inventory/Slot1"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Slot2" type="Panel" parent="UILayer/Inventory"]
+custom_minimum_size = Vector2(100, 72)
+
+[node name="Label" type="Label" parent="UILayer/Inventory/Slot2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Slot3" type="Panel" parent="UILayer/Inventory"]
+custom_minimum_size = Vector2(100, 72)
+
+[node name="Label" type="Label" parent="UILayer/Inventory/Slot3"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ZoomLayer" type="CanvasLayer" parent="."]
+layer = 10
+script = ExtResource("5_zoom_init")

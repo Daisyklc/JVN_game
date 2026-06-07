@@ -1,0 +1,23 @@
+# 1. 进门先检查：是不是来过？
+if {visited.visited_childteens}== true:
+    # 如果来过了，直接跳转到拒绝访问的 timeline
+    jump room_2F_banned/
+
+# 2. 如果没来过，打上已访问
+set {visited_childteens} = true
+
+# 3. 开始首次进入的正式剧情
+label FX_vignette_start
+label room_childteens_start
+label bg_ChildhoodBrokenBowl
+
+# 背景 破碗的背景 
+邻居: 好了，不要哭了！
+???: 把碗端起走，不要在这里哭哭啼啼的！
+郝悦: 谢谢嬢嬢…
+???: 造孽哦。吃了我们的饭，就要晓得好歹，不要像……一样……
+郝悦: 嬢嬢……我……
+label FX_vignette_end
+label room_childteens_end
+# 关闭四角黑色遮罩
+# 剧情结束，系统逻辑：回到大地图

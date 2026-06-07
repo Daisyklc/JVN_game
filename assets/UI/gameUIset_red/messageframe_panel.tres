@@ -1,0 +1,14 @@
+[gd_resource type="StyleBoxTexture" format=3 uid="uid://msgframe_bth05_red"]
+
+[ext_resource type="Texture2D" path="res://assets/UI/gameUIset_red/messageframe_01.png" id="1_msgframe"]
+
+[resource]
+texture = ExtResource("1_msgframe")
+texture_margin_left = 60.0
+texture_margin_top = 25.0
+texture_margin_right = 60.0
+texture_margin_bottom = 25.0
+content_margin_left = 68.0
+content_margin_top = 16.0
+content_margin_right = 68.0
+content_margin_bottom = 16.0

@@ -1,0 +1,92 @@
+{
+"@path": "res://addons/dialogic/Resources/character.gd",
+"@subpath": NodePath(""),
+&"_translation_id": "",
+&"color": Color(1, 1, 1, 1),
+&"custom_info": {
+"prefix": "",
+"sound_mood_default": "",
+"sound_moods": {},
+"style": "",
+"suffix": ""
+},
+&"default_portrait": "P普通C制服E普通",
+&"description": "",
+&"display_name": "郝悦",
+&"mirror": false,
+&"nicknames": [""],
+&"offset": Vector2(0, 0),
+&"portraits": {
+"OS": {
+"export_overrides": {},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"P普通C制服E低沉叹气": {
+"export_overrides": {
+"image": "res://assets/HY_Student/HY_P_normal_C_uniform_E_sigh.png"
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"P普通C制服E害羞": {
+"export_overrides": {
+"image": "res://assets/HY_Student/HY_P_normal_C_uniform_E_shy.png"
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"P普通C制服E微笑": {
+"export_overrides": {
+"image": "res://assets/HY_Student/HY_P_handOnElbow_C_uniform_E_smile.png"
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"P普通C制服E惊讶": {
+"export_overrides": {
+"image": "res://assets/HY_Student/HY_P_normal_C_uniform_E_surprised.png"
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"P普通C制服E愤怒": {
+"export_overrides": {
+"image": "res://assets/HY_Student/HY_P_normal_C_uniform_E_angry.png"
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"P普通C制服E普通": {
+"export_overrides": {
+"image": "res://assets/HY_Student/HY_P_normal_C_uniform_E_normal.png"
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"P普通C制服E黑脸": {
+"export_overrides": {
+"image": "res://assets/HY_Student/HY_P_normal_C_uniform_E_shadow.png"
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+}
+},
+&"scale": 1.0
+}

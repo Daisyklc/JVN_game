@@ -1,0 +1,14 @@
+label sc004_start
+label bg_testroom
+这是一间狭小的测评室。白色的墙面。只有一张桌子和一台电脑。
+label GAME_straightTOcomputer
+[让玩家点击电脑或者移动郝悦到电脑前]
+# 变成做量表游戏的界面了
+label GAME_straightTOcomputer_end
+label GAME_horribleTests
+[wait time="1.0"]
+label GAME_horribleTests_end
+郝悦 (P普通C制服E黑脸): 不要再问了。
+郝悦 (P普通C制服E黑脸): ……
+郝悦 (P普通C制服E黑脸): 我受够了！
+label sc004_end

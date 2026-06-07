@@ -1,0 +1,21 @@
+# 1. 进门先检查：是不是来过？
+if {visited.visited_yiyujiaolv} == true:
+    # 如果来过了，直接跳转到拒绝访问的 timeline
+    jump room_2F_banned/
+
+# 2. 如果没来过，打上已访问
+set {visited.visited_yiyujiaolv} = true
+
+# 3. 开始首次进入的正式剧情
+label FX_vignette_start
+label room_yiyujiaolv_start
+郝悦 (P普通C制服E害羞): 项老师，我回来了。
+项涟漪 (P普通C工作服E微笑): 郝悦，量表题做完了吗？
+郝悦 (P普通C制服E低沉叹气): 没有。
+项涟漪 (P普通C工作服E微笑): 为什么没有做完呢？你不想治的话，那让我陪你来干什么呢？
+郝悦 (P普通C制服E害羞): 不是。我没有。我。我。
+项涟漪 (P普通C工作服E微笑): 你不想治那我也没有必要在你身上浪费时间了，出去吧。
+label FX_vignette_end
+label room_yiyujiaolv_end
+# 关闭四角黑色遮罩
+# 剧情结束，系统逻辑：回到大地图
