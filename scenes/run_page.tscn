@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://6m661iog8t13"]
 
 [ext_resource type="Script" uid="uid://bgx6oyx1lms71" path="res://scripts/run_page.gd" id="1_script"]
+[ext_resource type="Script" uid="uid://d0ptqnbudhkyj" path="res://addons/dialogic/Modules/Character/node_portrait_container.gd" id="2_script"]
 
 [node name="RunPage" type="Control" unique_id=310279572]
 layout_mode = 3
@@ -87,3 +88,15 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 flat = true
+
+[node name="PortraitContainer" type="Control" parent="."]
+script = ExtResource("2_script")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+visible = false
+container_ids = PackedStringArray("center", "left", "right")
